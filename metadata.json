@@ -1,0 +1,7 @@
+{
+  "name": "MapleLeap AI",
+  "description": "An AI co-pilot that generates detailed export scaling and business optimization reports for Canadian businesses, helping them find global opportunities and the best technology for growth.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
