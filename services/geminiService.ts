@@ -78,11 +78,11 @@ Based on the user's industry, provide specific software and technology recommend
 `;
 
 export const generateReports = async (userInput: string): Promise<string> => {
-  if (!process.env.API_KEY) {
+  if (!process.env.NEXT_PUBLIC_API_KEY) {
     throw new Error("API_KEY environment variable not set");
   }
 
-  const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+  const ai = new GoogleGenAI({ apiKey: process.env.NEXT_PUBLIC_API_KEY });
   const fullPrompt = getSystemPrompt(userInput);
 
   try {
